@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    text-indent: 0.5cm;
+}

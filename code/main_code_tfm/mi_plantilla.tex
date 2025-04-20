@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=3cm,
+  right=3cm,
+  top=2.5cm,
+  bottom=2.5cm
+}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+
+% Configurar interlineado sencillo
+\singlespacing
+
+% Configurar numeración de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+% Configurar sangrado de párrafo
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{0cm}
+
+% Configurar títulos
+\titleformat{\chapter}[display]
+  {\normalfont\LARGE\bfseries}{\chaptername\ \thechapter}{20pt}{\LARGE}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Fuente Arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Definir el título principal en 14 puntos
+\renewcommand{\maketitle}{
+  \begin{center}
+    {\LARGE \textbf{\@title}}
+  \end{center}
+  \vspace{1cm}
+}
+
+% Comandos para las citas autor-fecha
+\usepackage[authoryear]{natbib}
+\bibliographystyle{plainnat}
+
+\begin{document}
+
+% Incluir el título
+\maketitle
+
+$body$
+
+\end{document}
